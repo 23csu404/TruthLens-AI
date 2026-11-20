@@ -5,7 +5,11 @@ from tavily import TavilyClient
 
 load_dotenv()
 
-API_KEY = os.getenv("TAVILY_API_KEY")
+try:
+    import streamlit as st
+    API_KEY = st.secrets.get("TAVILY_API_KEY") or os.getenv("TAVILY_API_KEY")
+except Exception:
+    API_KEY = os.getenv("TAVILY_API_KEY")
 
 
 def search_claim(claim):

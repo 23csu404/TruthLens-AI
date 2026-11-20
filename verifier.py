@@ -7,8 +7,11 @@ from google import genai
 
 load_dotenv()
 
-API_KEY = os.getenv("GEMINI_API_KEY")
-
+try:
+    import streamlit as st
+    API_KEY = st.secrets.get("GEMINI_API_KEY") or os.getenv("GEMINI_API_KEY")
+except Exception:
+    API_KEY = os.getenv("GEMINI_API_KEY")
 if not API_KEY:
     raise ValueError("Gemini API key is missing.")
 
