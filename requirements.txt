@@ -1,0 +1,8 @@
+
+streamlit
+pymupdf
+google-genai
+tavily-python
+python-dotenv
+pandas
+
