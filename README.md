@@ -37,6 +37,7 @@ TruthLens AI is an AI-powered fact-checking web application that analyses PDF do
 ## Project Structure
 
 ```text
+
 TruthLens_AI/
 │
 ├── app.py
@@ -46,8 +47,8 @@ TruthLens_AI/
 ├── verifier.py
 ├── requirements.txt
 ├── .gitignore
-├── README.md
-└── .env
+└── README.md
+
 ```
 
 The `.env` file contains private API credentials and must not be uploaded to GitHub.
@@ -57,8 +58,7 @@ The `.env` file contains private API credentials and must not be uploaded to Git
 ### 1. Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-cd TruthLens_AI
+git clone https://github.com/23csu404/TruthLens-AI.git
 ```
 
 ### 2. Create a virtual environment
