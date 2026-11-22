@@ -2,6 +2,10 @@
 # TruthLens AI
 ### Turning Documents into Verified Knowledge
 
+**Live Demo:** https://truthlens-ai-23csu404.streamlit.app/
+
+**GitHub Repository:** https://github.com/23csu404/TruthLens-AI
+
 TruthLens AI is an AI-powered fact-checking web application that analyses PDF documents, extracts verifiable factual claims, searches the live web for supporting evidence, and generates evidence-based verification reports.
 
 ## Features
